@@ -1,0 +1,5 @@
+mongo_image: mongo
+mongo_version: 8.0
+
+express_image: jasmar2/express-test-app
+express_version: latest

@@ -1,0 +1,15 @@
+- name: Mongo database
+  hosts: dockerhost
+  vars:
+    image: "{{ mongo_image }}"
+    image_tag: "{{ mongo_version }}"
+  roles:
+    - container
+
+- name: Express app
+  hosts: dockerhost
+  vars:
+    image: "{{ express_image }}"
+    image_tag: "{{ express_version }}"
+  roles:
+    - container

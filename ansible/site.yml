@@ -1,0 +1,2 @@
+- ansible.builtin.import_playbook: network.yml
+- ansible.builtin.import_playbook: dependencies.yml

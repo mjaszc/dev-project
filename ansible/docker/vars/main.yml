@@ -1,0 +1,3 @@
+---
+# vars file for docker
+directory_name: "test-dir"
