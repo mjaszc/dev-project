@@ -57,12 +57,6 @@
     dest: "/home/ubuntu/{{ directory_name }}/docker-compose.yml"
     mode: '0644'
 
-- name: Copy .env to remote host
-  copy:
-    src: "../../.env"
-    dest: "/home/ubuntu/{{ directory_name }}/.env"
-    mode: '0644'
-
 - name: Ensure UFW allows port 3000/tcp (if UFW installed)
   ansible.builtin.ufw:
      rule: allow
